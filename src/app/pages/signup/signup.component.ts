@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
 import {Router} from '@angular/router'
+import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  faEnvelope=faEnvelope;
+  faLock=faLock;
 email="";
 password="";
 message="";
