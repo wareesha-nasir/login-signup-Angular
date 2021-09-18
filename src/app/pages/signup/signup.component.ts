@@ -17,8 +17,16 @@ error: { name: string, message: string } = { name: '', message: '' };
 
   ngOnInit(): void {
   }
+
+  clearErrorMessage()
+  {
+    this.errorMessage = '';
+    this.error = {name : '' , message:''};
+  }
+
   signup()
   {
+    this.clearErrorMessage();
    if(this.validateForm(this.email,this.password)){
    
       this.authservice.signupWithEmail(this.email, this.password)
