@@ -18,13 +18,15 @@
          </div>
           </div>
         </form>
-        <div style="text-align: center; padding-top: 5px;">
-            <p *ngIf="errorMessage.length>0" class="text-danger">
-                {{errorMessage}}
-            </p>
-            <p *ngIf="error.message.length>0" class="text-danger">
-                {{error.message}}
-            </p>
+        <div class="form-group" style="padding-top: 5px;">
+            <p *ngIf="errorMessage.length > 0" class="text-danger">
+                {{errorMessage}}</p>
+            
+            <p *ngIf="error.message.length > 0" class="text-danger">
+                {{error.message}} </p>
+
+                <p *ngIf="message.length > 0" class="text-info">
+                    {{message}} </p>
         </div>
         </div>
       </div>

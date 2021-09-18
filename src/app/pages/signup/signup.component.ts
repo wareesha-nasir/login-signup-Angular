@@ -32,7 +32,9 @@ error: { name: string, message: string } = { name: '', message: '' };
       this.authservice.signupWithEmail(this.email, this.password)
         .then(() => {
           this.message = "you are register with data on firbase"
-          //this.router.navigate(['/userinfo'])
+         alert("your account is created successfully");
+         this.email="";
+         this.password="";
         }).catch(_error => {
           this.error = _error
           this.router.navigate(['/signup'])
@@ -49,32 +51,11 @@ error: { name: string, message: string } = { name: '', message: '' };
       this.errorMessage="Please enter password"
       return false;
       }
-       this.message="";
+       this.errorMessage="";
        return true;
      }
 
 }
 
-// signup(){
-//  if(validateForm(this.email,this.password)){
-// this.authservice.signupWithEmail(this.email,this.password).then(()=>{
-// this.router.navigate(['/login'])
-// }).catch(error=>{
-//   this.error=error,
-//   this.router.navigate(['/signup'])
-// })
 
-// }
-// }
-//  validateForm(email:string,password:string){
-// if(email.length===0){
-// this.errorMessage="Please enter email"
-// return false;
-// }
-// if(password.length===0){
-//   this.errorMessage="Please enter password"
-//   return false;
-//   }
-//  }
-// }
 

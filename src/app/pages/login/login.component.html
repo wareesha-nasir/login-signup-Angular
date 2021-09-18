@@ -20,7 +20,16 @@
         </div>
          <div style="padding-top: 5%;"><span style="padding-right: 5%;">Don't have an account</span><a href="#" routerLink="/signup">SignUp</a></div>
         </form>
+        <div class="form-group" style="padding-top: 5px;">
+            <p *ngIf="errorMessage.length > 0" class="text-danger">
+                {{errorMessage}}</p>
+            
+            <p *ngIf="error.message.length > 0" class="text-danger">
+                {{error.message}} </p>
+
         </div>
+        </div>
+
       </div>
    
     </div>
