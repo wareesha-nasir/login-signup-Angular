@@ -1,0 +1,24 @@
+
+.card{
+    width: 28rem; 
+    margin-top: 12%;
+}
+.container{
+    text-align: center;
+   
+}
+.btn{
+    width: 95%;
+}
+.card-title{
+    color: rgb(56, 56, 240);
+}
+.card-subtitle{
+    color: rgb(182, 181, 181);
+}
+.form-control{
+    margin-bottom:10px;
+}
+.form{
+margin-top: 30px;
+}
